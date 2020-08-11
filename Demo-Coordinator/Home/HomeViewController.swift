@@ -8,21 +8,16 @@
 
 import UIKit
 
-class HomeViewController: BaseViewController {
-    weak var coordinator: MainCoordinator?
+class HomeViewController: UIViewController {
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        title = "home"
-        view.backgroundColor = .white
-    }
+    var coordinator: HomeCoordinatorProtocol?
     
     @IBAction func onTapFirst(_ sender: Any) {
-        coordinator?.firstView()
+        coordinator?.goToFirstViewController()
     }
     
     @IBAction func onTapSecond(_ sender: Any) {
-        coordinator?.secondView()
+        coordinator?.goToSecondViewController()
     }
 }
 

@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "8A50637C24E1BF8800C66446"
-               BuildableName = "Coordinator.app"
-               BlueprintName = "Coordinator"
-               ReferencedContainer = "container:Coordinator.xcodeproj">
+               BuildableName = "Demo-Coordinator.app"
+               BlueprintName = "Demo-Coordinator"
+               ReferencedContainer = "container:Demo-Coordinator.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -45,9 +45,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "8A50637C24E1BF8800C66446"
-            BuildableName = "Coordinator.app"
-            BlueprintName = "Coordinator"
-            ReferencedContainer = "container:Coordinator.xcodeproj">
+            BuildableName = "Demo-Coordinator.app"
+            BlueprintName = "Demo-Coordinator"
+            ReferencedContainer = "container:Demo-Coordinator.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </LaunchAction>
@@ -62,9 +62,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "8A50637C24E1BF8800C66446"
-            BuildableName = "Coordinator.app"
-            BlueprintName = "Coordinator"
-            ReferencedContainer = "container:Coordinator.xcodeproj">
+            BuildableName = "Demo-Coordinator.app"
+            BlueprintName = "Demo-Coordinator"
+            ReferencedContainer = "container:Demo-Coordinator.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
