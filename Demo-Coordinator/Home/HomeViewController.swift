@@ -19,5 +19,9 @@ class HomeViewController: UIViewController {
     @IBAction func onTapSecond(_ sender: Any) {
         coordinator?.goToSecondViewController()
     }
+    
+    @IBAction func onTapModal(_ sender: Any) {
+        coordinator?.callModalController()
+    }
 }
 

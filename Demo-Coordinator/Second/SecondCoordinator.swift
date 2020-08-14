@@ -22,7 +22,7 @@ class SecondCoordinator: SecondCoordinatorProtocol {
     
     func start(animated: Bool, onDismissed: (() -> Void)?) {
         let secondViewController: SecondViewController = .instantiate()
-        router.present(secondViewController, animated: true, onDismissed: onDismissed)
+        router.push(secondViewController, animated: true, onDismissed: onDismissed)
     }
     
 }

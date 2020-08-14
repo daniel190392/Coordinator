@@ -25,8 +25,11 @@ public class NavigationRouter: NSObject {
 
 // MARK: - Router
 extension NavigationRouter: Router {
+    public func present(_ viewController: UIViewController, animated: Bool) {
+        navigationController.present(viewController, animated: animated, completion: nil)
+    }
     
-    public func present(_ viewController: UIViewController, animated: Bool,onDismissed: (() -> Void)?) {
+    public func push(_ viewController: UIViewController, animated: Bool,onDismissed: (() -> Void)?) {
         onDismissForViewController[viewController] = onDismissed
         navigationController.pushViewController(viewController, animated: animated)
     }
@@ -40,10 +43,20 @@ extension NavigationRouter: Router {
         navigationController.popToViewController( routerRootController, animated: animated)
     }
     
+    public func dismissModule(animated: Bool, completion: (() -> Void)?) {
+        navigationController.dismiss(animated: animated, completion: completion)
+    }
+    
+    public func setRootModule(_ viewController: UIViewController, hideBar: Bool = false) {
+        onDismissForViewController.forEach { $0.value() }
+        navigationController.setViewControllers([viewController], animated: true)
+        navigationController.isNavigationBarHidden = hideBar
+    }
+    
     private func performOnDismissed(for viewController: UIViewController) {
         guard let onDismiss = onDismissForViewController[viewController] else { return }
         onDismiss()
-        onDismissForViewController[viewController] = nil
+        onDismissForViewController.removeValue(forKey: viewController)
     }
     
 }

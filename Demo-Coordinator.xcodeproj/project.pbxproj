@@ -17,6 +17,10 @@
 		41DD142324E25DA7007CE7C1 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41DD142224E25DA7007CE7C1 /* SecondViewController.swift */; };
 		41DD142524E25DB3007CE7C1 /* SecondCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41DD142424E25DB3007CE7C1 /* SecondCoordinator.swift */; };
 		41DD142724E25DBB007CE7C1 /* Second.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 41DD142624E25DBB007CE7C1 /* Second.storyboard */; };
+		8A19637D24E6A9EA00D7DA6D /* Modal.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8A19637C24E6A9EA00D7DA6D /* Modal.storyboard */; };
+		8A19637F24E6AA0A00D7DA6D /* ModalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A19637E24E6AA0A00D7DA6D /* ModalViewController.swift */; };
+		8A19638124E6AAC900D7DA6D /* ModalCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A19638024E6AAC900D7DA6D /* ModalCoordinator.swift */; };
+		8A19638324E6AF9500D7DA6D /* ViewControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A19638224E6AF9500D7DA6D /* ViewControllerDelegate.swift */; };
 		8A50638124E1BF8800C66446 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A50638024E1BF8800C66446 /* AppDelegate.swift */; };
 		8A50638524E1BF8800C66446 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A50638424E1BF8800C66446 /* HomeViewController.swift */; };
 		8A50638824E1BF8800C66446 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8A50638624E1BF8800C66446 /* Home.storyboard */; };
@@ -37,6 +41,10 @@
 		41DD142224E25DA7007CE7C1 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		41DD142424E25DB3007CE7C1 /* SecondCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondCoordinator.swift; sourceTree = "<group>"; };
 		41DD142624E25DBB007CE7C1 /* Second.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Second.storyboard; sourceTree = "<group>"; };
+		8A19637C24E6A9EA00D7DA6D /* Modal.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Modal.storyboard; sourceTree = "<group>"; };
+		8A19637E24E6AA0A00D7DA6D /* ModalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalViewController.swift; sourceTree = "<group>"; };
+		8A19638024E6AAC900D7DA6D /* ModalCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalCoordinator.swift; sourceTree = "<group>"; };
+		8A19638224E6AF9500D7DA6D /* ViewControllerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerDelegate.swift; sourceTree = "<group>"; };
 		8A50637D24E1BF8800C66446 /* Demo-Coordinator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Demo-Coordinator.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8A50638024E1BF8800C66446 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8A50638424E1BF8800C66446 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
@@ -84,6 +92,7 @@
 				8A50639424E1C0BB00C66446 /* Coordinator.swift */,
 				414F1AEA24E23A1E0002A973 /* Router.swift */,
 				414F1AEC24E23B260002A973 /* NavigationRouter.swift */,
+				8A19638224E6AF9500D7DA6D /* ViewControllerDelegate.swift */,
 			);
 			path = "Pattern-Coordinator";
 			sourceTree = "<group>";
@@ -126,6 +135,16 @@
 			path = Second;
 			sourceTree = "<group>";
 		};
+		8A19637B24E6A9CD00D7DA6D /* Modal */ = {
+			isa = PBXGroup;
+			children = (
+				8A19637E24E6AA0A00D7DA6D /* ModalViewController.swift */,
+				8A19637C24E6A9EA00D7DA6D /* Modal.storyboard */,
+				8A19638024E6AAC900D7DA6D /* ModalCoordinator.swift */,
+			);
+			path = Modal;
+			sourceTree = "<group>";
+		};
 		8A50637424E1BF8800C66446 = {
 			isa = PBXGroup;
 			children = (
@@ -149,6 +168,7 @@
 				414F1AF224E251C60002A973 /* Home */,
 				41DD141A24E25AC1007CE7C1 /* First */,
 				41DD142124E25D94007CE7C1 /* Second */,
+				8A19637B24E6A9CD00D7DA6D /* Modal */,
 				41CD4AAC24E238C3001F756C /* Pattern-Coordinator */,
 				41DD141F24E25D6E007CE7C1 /* Resources */,
 				41DD142024E25D7F007CE7C1 /* Extensions */,
@@ -218,6 +238,7 @@
 				8A50638A24E1BF8900C66446 /* Assets.xcassets in Resources */,
 				8A50638824E1BF8800C66446 /* Home.storyboard in Resources */,
 				41DD142724E25DBB007CE7C1 /* Second.storyboard in Resources */,
+				8A19637D24E6A9EA00D7DA6D /* Modal.storyboard in Resources */,
 				41DD141C24E25AE2007CE7C1 /* First.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -233,11 +254,14 @@
 				414F1AEB24E23A1E0002A973 /* Router.swift in Sources */,
 				41DD142524E25DB3007CE7C1 /* SecondCoordinator.swift in Sources */,
 				41DD141924E2592E007CE7C1 /* UIViewController+Extension.swift in Sources */,
+				8A19638124E6AAC900D7DA6D /* ModalCoordinator.swift in Sources */,
+				8A19638324E6AF9500D7DA6D /* ViewControllerDelegate.swift in Sources */,
 				414F1AF424E251E90002A973 /* HomeCoordinator.swift in Sources */,
 				8A50639524E1C0BB00C66446 /* Coordinator.swift in Sources */,
 				414F1AF124E24F9F0002A973 /* AppCoordinator.swift in Sources */,
 				41DD141E24E25B27007CE7C1 /* FirstCoordinator.swift in Sources */,
 				8A50638524E1BF8800C66446 /* HomeViewController.swift in Sources */,
+				8A19637F24E6AA0A00D7DA6D /* ModalViewController.swift in Sources */,
 				414F1AED24E23B260002A973 /* NavigationRouter.swift in Sources */,
 				8A50638124E1BF8800C66446 /* AppDelegate.swift in Sources */,
 				8A50639B24E1C6DB00C66446 /* FirstViewController.swift in Sources */,

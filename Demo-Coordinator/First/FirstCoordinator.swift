@@ -18,7 +18,7 @@ class FirstCoordinator: Coordinator {
     
     func start(animated: Bool, onDismissed: (() -> Void)?) {
         let firstViewController: FirstViewController = .instantiate()
-        router.present(firstViewController, animated: true, onDismissed: onDismissed)
+        router.push(firstViewController, animated: true, onDismissed: onDismissed)
     }
     
     
